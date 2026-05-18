@@ -1,0 +1,227 @@
+/* 全体のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP',sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* ----------ヘッダー---------- */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 40px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+/* サイトのロゴ部分 */
+.site_name {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #222;
+    text-decoration: none;
+}
+
+/* ナビゲーションのリンク */
+nav {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+nav a {
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+/* 各セクションの共通余白 */
+section {
+    padding: 64px 40px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* ----------ヒーローセクション---------- */
+#hero {
+    padding-top: 88px;
+    padding-bottom: 72px;
+}
+
+/* アイコン */
+.avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #e8f0fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a6cf7;
+    margin-bottom: 20px;
+    }
+
+/* 名前 */
+.hero_name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* キャッチコピー */
+.hero_catch {
+    font-size: 15px;
+    color: #666;
+}
+
+/* 区切り線 */
+.divider {
+    border: none;
+    border-top: 1px solid #eee;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* ----------基本情報セクション---------- */
+.info_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    }
+
+.info_item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 16px 20px;
+    }
+
+/* 項目名（例：出身地） */
+.info_label {
+    font-size: 11px;
+    color: #aaa;
+    margin-bottom: 4px;
+    }
+
+/* 内容（例：宮崎市） */
+    .info_value {
+    font-size: 15px;
+    font-weight: 500;
+    }
+
+    /* ----------趣味セクション----------*/
+    .tag_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
+
+    /* 趣味のタグひとつひとつ */
+    .tag {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 99px;
+    padding: 6px 16px;
+    font-size: 13px;
+    color: #444;
+    }
+
+    /* ----------好きなものランキングセクション---------- */
+    .ranking_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+
+    .ranking_item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    }
+
+    /* 順位バッジ */
+    .rank_badge {
+    font-size: 22px;
+    width: 36px;
+    text-align: center;
+    }
+
+    .rank_title {
+    font-size: 14px;
+    font-weight: 500;
+    }
+
+    .rank_reason {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+    }
+
+    /* ----------フッター---------- */
+    footer {
+    text-align: center;
+    padding: 32px 40px;
+    font-size: 12px;
+    color: #bbb;
+    border-top: 1px solid #eee;
+    }
+
+    /* ----------レスポンシブ対応---------- */
+    @media (max-width: 600px) {
+        header {
+            padding: 0 16px;
+        }
+
+        nav  {
+            gap: 14px;
+        }
+
+        nav a {
+            font-size: 12px;
+        }
+
+        section {
+            padding: 40px 16px;
+        }
+
+        #hero {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .hero_name {
+            font-size: 24px;
+        }
+
+        .info_list {
+            grid-template-columns: 1fr;
+        }
+
+        footer {
+            padding: 24px 16px;
+        }
+
+    }
